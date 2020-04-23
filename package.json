@@ -1,0 +1,15 @@
+{
+  "name": "tmdb-webhook",
+  "version": "1.0.0",
+  "description": "TMDB webhook for Chat bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sourav Dey",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "unirest": "^0.6.0"
+  }
+}
