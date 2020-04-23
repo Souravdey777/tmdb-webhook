@@ -5,7 +5,6 @@ var unirest = require("unirest");
 let errorResposne = {
     results: []
 };
-const hostname = '127.0.0.1';
 var port = process.env.PORT || 8080;
 // create serve and configure it.
 const server = express();
