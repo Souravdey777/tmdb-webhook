@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "moviedb-promise": "^3.0.2",
     "unirest": "^0.6.0"
   }
 }
