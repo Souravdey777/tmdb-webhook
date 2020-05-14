@@ -14,7 +14,7 @@ const server = express();
 const API_KEY="6ed9d94bd9ea7880be31f354d69cc925"
 server.use(bodyParser.json());
 server.post('/getMovies',function (request,response)  {
-    if(request.body.result.parameters['top-rated']) {
+    if(request.body.queryResult.parameters['top-rated']) {
         var req = unirest("GET", "https://api.themoviedb.org/3/movie/top_rated");
             req.query({
                 "page": "1",
@@ -43,7 +43,7 @@ server.post('/getMovies',function (request,response)  {
                     })); 
                 }
             });
-    } else if(request.body.result.parameters['movie-name']) {
+    } else if(request.body.queryResult.parameters['movie-name']) {
      //   console.log('popular-movies param found');
         let movie = request.body.result.parameters['movie-name'];
         var req = unirest("GET", "https://api.themoviedb.org/3/search/movie");
@@ -80,7 +80,7 @@ server.post('/getMovies',function (request,response)  {
                 }
             });
 
-    } else if(request.body.result.parameters['popular-movies']) {    
+    } else if(request.body.queryResult.parameters['popular-movies']) {    
         var req = unirest("GET", "https://api.themoviedb.org/3/movie/popular");
             req.query({
                 "page": "1",
