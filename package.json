@@ -9,7 +9,7 @@
   "author": "Sourav Dey",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "moviedb-promise": "^3.0.2",
     "unirest": "^0.6.0"
   }
